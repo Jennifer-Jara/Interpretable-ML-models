@@ -16,12 +16,11 @@ library(iml)
 library(lime)
 
 # Data 
-load(file = "/Users/jenniferjara/Documents/Code R/Covid19/Code/data_tutoriel.RData")
+load(file = "/Users/jenniferjara/Documents/Code R/Covid19/Tutoriel/data_tutoriel.RData")
 colnames(data)[which(names(data) == "Y_sim")] <- "Treatment.response"
 
 
 ## Summary of radiomic features
-olnames(data)[which(names(data) == "Y_sim")] <- "Treatment.response"
 tab1.Treat <-
   tableby(Treatment.response ~ ., data = data, numeric.test = "kwt", cat.test = "fe")
 
