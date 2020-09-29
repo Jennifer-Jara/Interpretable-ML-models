@@ -16,7 +16,7 @@ library(iml)
 library(lime)
 
 # Data 
-load(file = "/Users/jenniferjara/Documents/Code R/Covid19/Tutoriel/data_tutoriel.RData")
+load(file = "/Users/jenniferjara/Documents/Code R/Covid19/Tutoriel/data_tutorial.RData")
 colnames(data)[which(names(data) == "Y_sim")] <- "Treatment.response"
 
 
